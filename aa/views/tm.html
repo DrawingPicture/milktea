@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>网上售卖</title>
+        <meta name="keywords" content="支付宝，扫一扫">
+        <meta name="description" content="支付宝扫一扫" />
+
+        <style>
+            *{margin: 0;padding: 0;}
+            img{border:0;}
+            body{font-size:12px;font-family:"微软雅黑";color:#666;}
+            .top{width:100%;height:85px;}
+            .top .t_header{width:1000px;height:85px;margin: 0 auto;}
+            .top .t_header .logo{width: 200px; height: 85px; display: block;
+            line-height:85px;text-align:center;
+            text-decoration:none;font-size:80px;color:red;}
+            .banner{width:100%;height:160px;background:url("images/banner.jpg")}
+            .shop{width:1000px;height:340px;margin:10px auto;}
+            .shop ul li{
+                border:1px solid #efefef;
+                list-style:none;
+                width:200px;padding:5px;
+                float:left;
+                margin:0px 10px;
+            }
+            .shop ul li:hover{border:1px solid red;}
+            .shop ul li .s_price{font-size:20px;color:#C00;}
+            .shop ul li .s_title{line-height:30px;}
+            .shop ul li p{font-size:14px;}
+            .shop ul li .s_add{width:200px;height:36px;
+                display:block;text-align:center;
+                background:#bc0000;
+                line-height:36px;text-decoration:none;font-size:14px;
+                color:#fff;font-weight:bold;border-radius:3px;
+            }
+            .shop ul li .s_add:hover{background:#A80000;}
+
+            .car{width:250px;height:100%;position:absolute;top:0;right:0;}
+            .car .c_tools{width:35px;height:100%;background:#000;float:left;}
+            .car .c_con{width:215px;height:100%;background:#eee;float:left;}
+
+            .car .c_tools .c_btn{width:35px;height:110px;
+            display:block;margin-top:300px;
+            text-decoration:none;color:#fff;font-size:14px;
+            }
+            .car .c_tools .c_btn:hover{background:#A80000;}
+            .car .c_tools .c_btn i{width:35px;height:35px;display:block;
+            text-align:center;line-height:35px;
+            font-size:24px;color:#fff;}
+            .car .c_tools .c_btn span{width:15px;display:block;margin:5px auto;}
+
+            .car .c_con ul li{list-style:none;width:225px;height:55px;background:#fff;margin-bottom:5px;}
+            .car .c_con .c_sub{width:215px;height:40px;display:block;
+            background:#bc0000;position:absolute;bottom:0;
+            right:0;text-align:center;line-height:40px;font-size:20px;color:#fff;text-decoration:none;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+    </head>
+    <body>
+        <div class="top">
+            <div class="t_header">
+                <a href="#" class="iconfont logo">&#xe602;</a>
+            </div>
+        </div>
+
+        <div class="banner"></div>
+
+        <div class="shop">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/1.webp.jpg" width="200px" height="280px" alt="商品1" />
+                    </a>
+                    <p class="s_price">￥<span class="s_p">0.01</span></p>
+                    <p class="s_title">春装韩版系带小香风蝴蝶结衬衫</p>
+                    <a href="#" class="s_add">加入购物车</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/2.webp.jpg" width="200px" height="280px" alt="商品1" />
+                    </a>
+                    <p class="s_price">￥<span class="s_p">0.01</span></p>
+                    <p class="s_title">春装韩版系带小香风蝴蝶结衬衫</p>
+                    <a href="#" class="s_add">加入购物车</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/3.webp.jpg" width="200px" height="280px" alt="商品1" />
+                    </a>
+                    <p class="s_price">￥<span class="s_p">0.01</span></p>
+                    <p class="s_title">春装韩版系带小香风蝴蝶结衬衫</p>
+                    <a href="#" class="s_add">加入购物车</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/4.webp.jpg" width="200px" height="280px" alt="商品1" />
+                    </a>
+                    <p class="s_price">￥<span class="s_p">0.01</span></p>
+                    <p class="s_title">春装韩版系带小香风蝴蝶结衬衫</p>
+                    <a href="#" class="s_add">加入购物车</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="car">
+            <div class="c_tools">
+                <a href="#" class="c_btn">
+                    <i class="iconfont">&#xf003f;</i>
+                    <span>购物车</span>
+                </a>
+            </div>
+            <div class="c_con">
+                <ul id="c_ul">
+                    <li>
+                        <a href="#"><img src="images/1.webp.jpg" alt="" width="50" height="50" /></a>
+                        <span>优惠价格：￥0.01</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/1.webp.jpg" alt="" width="50" height="50" /></a>
+                        <span>优惠价格：￥0.01</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/1.webp.jpg" alt="" width="50" height="50" /></a>
+                        <span>优惠价格：￥0.01</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/1.webp.jpg" alt="" width="50" height="50" /></a>
+                        <span>优惠价格：￥0.01</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/1.webp.jpg" alt="" width="50" height="50" /></a>
+                        <span>优惠价格：￥0.01</span>
+                    </li>
+                </ul>
+                <a href="#" class="c_sub">结算</a>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script>
+            $(function(){
+                //alert("d");
+                $(".s_add").click(function(){
+                    var s_price = $(this).parent().find(".s_p").text();
+                    var src = $(this).parent().find("img").attr("src");
+                    $("#c_ul").append("<li>"+
+                        "<a href='#'><img src='"+src+"' alt='' width='50' height='50' /></a>"+
+                        "<span>优惠价格：￥"+s_price+"</span>"+
+                        "</li>");
+                    });
+                })
+        </script>
+    </body>
+</html>

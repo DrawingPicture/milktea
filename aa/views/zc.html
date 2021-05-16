@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>用户注册</title>
+      <link rel="shortcut icon" href="/images/logo.jpg">
+      <link rel="stylesheet" href="/stylesheets/zc.css">
+      <base href="_blank">
+      <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+      <script src="/javascripts/zhuce.js"></script>
+    </head>
+    <body>
+      <!-- 项目左边 -->
+      <div class="container-left" id="mainnav">
+        <div class="menu">
+          <div class="menu-left">
+            <a href="#"><img src="/images/logo.jpg"></a>
+          </div>
+          <div class="nav">门店</div>
+          <div class="nav">我的账户</div>
+          <div class="nav">菜单</div>
+          <div class="menu-right" id="btnSubnav">
+            <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-hamburger.svg">
+          </div>
+        </div>
+        <div class="menu-text">
+          <div class="menu-text-top">
+            心情惬意，来杯奶茶吧 🍹
+          </div>
+          <div class="menu-text-bottom">
+            <div class="a">🎊</div>
+            <button class="reges" id="return_main">返回原网页</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 点击容器左边右上角的三条杠会弹出子导航栏 -->
+      <div class="container-left-subnav" id="subnav">
+        <div class="menu">
+          <div class="menu-left">
+            <a href="#"><img src="/images/logo.jpg"></a>
+          </div>
+          <div class="subnav-right" id="subnavClose">
+            <button class="icon close">Close</button>
+          </div>
+        </div>
+        <div class="subnav-content" >
+          <ul class="subnav-content-ul">
+            <li><a href="">门店</a></li>
+            <li><a href="">会员俱乐部</a></li>
+            <li><a href="">菜单</a></li>
+            <li><hr/></li>
+            <li><a href="">Sakura奶茶移动应用</a></li>
+            <li><a href="">樱花卡</a></li>
+            <li><a href="">Sakura奶茶臻选™</a></li>
+            <li><a href="">奶茶快点™- 在线点 到店取</a></li>
+            <li><a href="">花花送</a></li>
+            <li><a href="">奶茶小课堂</a></li>
+            <li><a href="">茶叶烘焙工坊</a></li>
+            <li><a href="">关于Sakura奶茶</a></li>
+            <li><a href="">帮助中心</a></li>
+            <li><hr/></li>
+          </ul>
+          <div class="a">🎊</div>
+          <button class="reges">返回原网页</button>
+          <div class="subnav-bottom-text">
+            English | 隐私政策 | 使用条款
+          </div>
+        </div>
+        <div class="subnav-bottom">
+        </div>
+      </div>
+
+      <!-- 项目右边 -->
+      <div class="container-right">
+
+        <!--第一部分 轮播图 -->
+        <div class="banner" id="banner">
+          <ul class="banner-ul" id="bannerul">
+            <li><img src="/images/gg01.jpg"></li>
+            <li><img src="/images/gg02.jpg"></li>
+            <li><img src="/images/gg03.jpg"></li>
+            <li><img src="/images/gg04.jpg"></li>
+            <li><img src="/images/gg05.jpg"></li>
+          </ul>
+          <div class="banner-right-buttom" id="btnNext">
+            <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-scroll-right.svg">
+          </div>
+          <div class="banner-promotion">广告</div>
+        </div>
+
+        <!--第二部分 登录 -->	
+        <form> 
+          <div>
+			      <label for="userName">姓名</label>
+			      <input type="text" name="use_userName" id="userName">
+			      <button type="button" id="btn_user" class="yz">验证</button>
+			      <p class="userName" id="p_userName"></p>
+		      </div>
+          <div>
+			      <label for="passport">密码</label>
+			      <input type="text" name="use_passport" id="passport">
+			      <button type="button" id="btn_pass" class="yz">验证</button>
+			      <p class="passport" id="p_passport"></p>
+		      </div>
+          <div>
+			      <label for="rPassport">确认密码</label>
+			      <input type="text" name="use_rPassport" id="rPassport">
+			      <button type="button" id="btn_r" class="yz">验证</button>
+			      <p class="rPassport" id="p_rPassport"></p>
+		      </div>
+          <div>
+			      <label for="number">手机号码</label>
+			      <input type="text" name="use_number" id="number">
+			      <button type="button" id="btn_num" class="yz">验证</button>
+			      <p class="number" id="p_number"></p>
+		      </div>
+          <div>
+			      <label for="email">邮箱</label>
+			      <input type="text" name="use_email" id="email">
+			      <button type="button" id="btn_e" class="yz">验证</button>
+            <p class="email" id="p_email"></p>
+          </div> 
+	      </form>
+        <div>
+          <button class="lo_qr" id="qr_button">确认注册</button>
+          <button class="lo_qr" id="dl_button">🎊登录</button>
+        </div>
+      </div>
+      <script type="text/javascript" src="/javascripts/zc.js"></script>
+    </body>
+</html>
